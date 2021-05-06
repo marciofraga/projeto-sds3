@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dsvendas
+    username: postgres
+    password: Postgres@123
+
+  jpa:
+    properties:
+      #javax:
+        #persistence:
+          #schema-generation:
+            #create-source: metadata
+            #scripts:
+            #  action: create
+            #  create-target: create.sql
+      hibernate:
+        #hbm2ddl:
+        #  delimiter: ;
+        ddl-auto: none
+        jdbc:
+          lob.non_contextual_creation: true
